@@ -4,6 +4,7 @@ import useMediaQuery from '@/hooks/useMediaQuery'
 import ActionButton from '@/shared/ActionButton'
 import HomePageText from "@/assets/HomePageText.png"
 import HomePageGraphic from "@/assets/HomePageGraphic.png"
+import Mizuno from "@/assets/Mizuno.jpeg"
 import SponsorRedbull from "@/assets/SponsorRedbull.png"
 import SponsorForbes from "@/assets/SponsorForbes.png"
 import SponsorFortune from "@/assets/SponsorFortune.png"
@@ -22,7 +23,7 @@ const Home = ({ setSelectedPage }: Props) => {
             className='gap-16 bg-gray20 py-10 md:h-full md:pb-0'>
             {/*Image and Main Header*/}
             <motion.div className='md:flex mx-auto w-5/6 items-center justify-center md:h-5/6'
-            onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
+                onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
                 {/*Main Header*/}
                 <div className='z-10 mt-32 md:basis-3/5'>
                     {/*Headings*/}
@@ -37,13 +38,13 @@ const Home = ({ setSelectedPage }: Props) => {
                         }}>
                         <div className='relative'>
                             <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext'>
-                                <img src={HomePageText} alt="home-page-text" />
+                                {/* <img src={HomePageText} alt="home-page-text" /> */}
                             </div>
                         </div>
-                        <p className='mt-8 text-sm'>
-                            Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-                            Studios to get the Body Shapes That you Dream of.. Get Your Dream
-                            Body Now.
+                        <p className='mt-8 text-xs'>
+                            Смотря на бутсы Mizuno, мы видим, что компания продолжает делать в 2021 году практически то же, что и делала на заре своего становления. Как нам кажется, принцип компании заключается в фразе: зачем выдумывать что-то новое, когда мы уже сделали что-то качественное и это эффективно работает.
+                            Разработчики компании просто занимаются совершенствованием некоторых деталей, но не идут на поводу у моды и трендов. В то время, когда Nike, Adidas и Puma впереди планеты всей пытаются нас удивить чем-то новым, Mizuno продолжает делать то, что и делала. При этом на рынок выпускает только то, что не сможет испортить репутацию бренда. А для бренда высокое качество продукции – это очень важный показатель.
+                            Бутсы Mizuno продолжают выпускать обувь из фирменных материалов: натуральной кожи или синтетики, которая по своим свойствам напоминает кожу. Практически все модели имеют классическое строение с минимальным набором технологий. Используются только те разработки, которые реально нужны в конструкции и от наличия которых есть какой-то толк.
                         </p>
                     </motion.div>
                     {/*Actions*/}
@@ -68,8 +69,9 @@ const Home = ({ setSelectedPage }: Props) => {
                     </motion.div>
                 </div>
                 {/*Image*/}
-                <div className='flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end'>
-                    <img src={HomePageGraphic} alt="home-pageGraphic" />
+                <div className='flex basis-2/6 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end'>
+                    {/* <img src={HomePageGraphic} alt="home-pageGraphic" /> */}
+                    <img src={Mizuno} alt="home-pageGraphic" style={{ maxWidth: '100%' }} />
                 </div>
             </motion.div>
             {/*Sponsors*/}

@@ -2,6 +2,7 @@ import { SelectedPage } from '@/shared/types'
 import { motion } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png"
+import Hulk from "@/assets/Hulk.webp"
 import HText from '@/shared/HText'
 
 type Props = {
@@ -36,12 +37,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                         visible: { opacity: 1, x: 0 },
                     }}>
                     <HText>
-                        <span className='text-primary-500'>JOIN NOW</span> TO GET IN SHAPE
+                        <span className='text-primary-500'>ПОКУПАЙТЕ СЕЙЧАС</span>
                     </HText>
                     <p className='my-5'>
-                        Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-                        sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-                        adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+                        Успейте оформить заявку для приобретения футбольных бутс до <span className='text-primary-500'>28.02.2023</span> года и получи <span className='text-primary-500'>40 %</span> скидки на первую покупку
                     </p>
                 </motion.div>
                 {/*Form and Image*/}
@@ -125,9 +124,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                         <div className='md:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]'>
                             <img 
                             className='w-full' 
-                            src={ContactUsPageGraphic} 
+                            src={Hulk} 
                             alt="contact-us-page-graphic" />
                         </div>
+                        <p className='md:mt-6'>Ведущий футболист мира Hulk выбирает Премиальные бутсы Mizuno Morelia Neo II Md.</p>
                     </motion.div>
                 </div>
             </motion.div>
